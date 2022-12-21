@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="meven:war exploded">
+    <output-path>$PROJECT_DIR$/meven-master/target/meven</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>meven</module>
+        <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="meven" />
+        </element>
+        <element id="directory" name="lib" />
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/meven-master/target/meven/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="meven/web/Web" />
+    </root>
+  </artifact>
+</component>
